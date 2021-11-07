@@ -1,0 +1,9 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="/Users/user/Projects/BlazorLeaning/BlazorLeaning/bin/Debug/net5.0/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/Users/user/Projects/BlazorLeaning/BlazorLeaning/obj/Debug/net5.0/scopedcss/bundle/" />
+  <ContentRoot BasePath="_content/Blazorise" Path="/Users/user/.nuget/packages/blazorise/0.9.4.7/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Blazorise.Charts" Path="/Users/user/.nuget/packages/blazorise.charts/0.9.4.7/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/Blazorise.Charts.Streaming" Path="/Users/user/.nuget/packages/blazorise.charts.streaming/0.9.4.7/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/ChartJs.Blazor" Path="/Users/user/.nuget/packages/chartjs.blazor/1.1.0/build/../staticwebassets/" />
+  <ContentRoot BasePath="_content/IgniteUI.Blazor" Path="/Users/user/.nuget/packages/igniteui.blazor/21.1.37-beta/build/../staticwebassets/" />
+</StaticWebAssets>

@@ -1,0 +1,33 @@
+﻿@page "/Calendaritem"
+@inject HttpClient Http
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./FetchData.razor.css">
+    <title>ユーザーログイン</title>
+</head>
+<body>
+    <header>
+        <h1 class="headline">
+            <a>ユーザーログイン</a>
+        </h1>
+    </header>
+    <div class="main">
+        <br>
+        <h1>カルテ診断システム</h1>
+        <br>
+        <h3 style="text-align: left;">ユーザー名</h3>
+        <input type="text" style="width: 500px; height: 30px" class="imputfield username">
+        <br>
+        <br>
+        <h3 style="text-align: left;">パスワード</h3>
+        <input type="text" style="width: 500px; height: 30px" class="imputfield username">
+        <br>
+        <br>
+        <br>
+        <div style="text-align: right;" class="btn">
+            <a href="#" class="btn--login">ログインする</a>
+        </div>
+    </div>
+</body>

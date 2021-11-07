@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IgniteUI.Blazor" Version="21.1.15-trial" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.9" PrivateAssets="all" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+    <PackageReference Include="ChartJs.Blazor" Version="1.1.0" />
+    <PackageReference Include="Blazorise.Charts" Version="0.9.4.7" />
+    <PackageReference Include="Blazorise.Charts.Streaming" Version="0.9.4.7" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ChartJs.Blazor" />
+    <None Remove="Blazorise.Charts" />
+    <None Remove="Blazorise.Charts.Streaming" />
+    <None Remove="Microsoft.AspNet.WebApi.Cors" />
+  </ItemGroup>
+</Project>

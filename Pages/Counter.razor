@@ -1,0 +1,40 @@
+﻿@page "/counter"
+@using System.Text.Json
+@using System.Text.Json.Serialization;
+@using System.Web.Http.Cors;
+@inject HttpClient Http
+
+<h1>Counter</h1>
+
+<p>取得したJson結果: @responceText</p>
+
+
+<button class="btn btn-primary" @onclick="OnInitializedAsync">サーバー通信してjsonを取得</button>
+
+@code {
+    string responceText;
+    private ResponceData[] responceDatas;
+
+    async void OnInitializedAsync()
+    {
+        var responses = await Http.GetFromJsonAsync<ResponceData[]>("https://virtserver.swaggerhub.com/Qitz5/karute/1.0.0/shop");
+
+        foreach (var r in responses)
+        {
+            responceText += "ID:" + r.ID.ToString() + "Name:" + r.NAME + "Comment:" + r.COMMENT;
+        }
+    }
+
+    public class ResponceData
+    {
+        [JsonPropertyName("id")]
+        public int ID { get; set; }
+
+        [JsonPropertyName("name")]
+        public string NAME { get; set; }
+
+        [JsonPropertyName("comment")]
+        public string COMMENT { get; set; }
+    }
+
+}
